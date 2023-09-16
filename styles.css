@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * {
 	font-family: 'Montserrat', sans-serif;
@@ -10,7 +9,7 @@ body {
 	padding: 100px 0;
 }
 .carousel-item {
-	height: 100vh;
+	height: calc(100vh - 63.5px);
 	min-height: 300px;
 }
 .carousel-caption {
@@ -41,14 +40,19 @@ body {
 }
 .navbar .getstarted {
 	background: #106eea;
-	margin-left: 30px;
+	/* margin-left: 30px; */
 	border-radius: 4px;
 	font-weight: 400;
 	color: #fff;
 	text-decoration: none;
-	padding: .5rem 1rem;
+	padding: 0.5rem 1rem;
 	line-height: 2.3;
 }
+
+.navbar-nav {
+	gap: 0.5rem;
+}
+
 .navbar-nav a {
 	font-size: 15px;
 	text-transform: uppercase;
@@ -61,13 +65,15 @@ body {
 	font-weight: bold;
 	letter-spacing: 2px;
 }
-.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
 	color: #000;
 }
 .navbar-light .navbar-nav .nav-link {
 	color: #000;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
 	color: #000;
 }
 .w-100 {
@@ -91,7 +97,11 @@ body {
 .team .card-body i {
 	font-size: 20px;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar-nav {
+		text-align: center;
+	}
 	.carousel-caption {
 		bottom: 370px;
 	}
@@ -105,6 +115,7 @@ body {
 		width: 100%;
 	}
 }
+
 @media only screen and (max-width: 767px) {
 	.navbar-nav {
 		text-align: center;
@@ -131,4 +142,3 @@ body {
 		margin-bottom: 30px;
 	}
 }
-
