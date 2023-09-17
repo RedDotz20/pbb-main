@@ -1,0 +1,37 @@
+/* styles.css */
+
+/* Center the card vertically and horizontally */
+
+.card {
+    margin-top: 10%;
+}
+
+.card-header {
+    background-color: #007BFF; /* Blue background color */
+    color: white; /* White text color */
+    text-align: center;
+    font-size: 24px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    width: 100%;
+}
+.card .buttom-link{
+    text-align: center;
+}
+
+button[type="submit"] {
+    margin-bottom: 0.75rem;
+}
+
+.container {
+    padding: 20px;
+}
